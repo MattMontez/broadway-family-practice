@@ -6,7 +6,10 @@
     <title>Broadway Family Practice | Personalized Primary Care in Littleton, CO</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="preload" as="image" href="assets/Broadway Family Practice.jpg">
+    <link rel="preload" as="video" href="assets/hero-background.mp4" type="video/mp4">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap"></noscript>
     <style>
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -45,6 +48,8 @@
             height: 100%;
             object-fit: cover;
             filter: brightness(1.5) contrast(0.82) saturate(0.45);
+            will-change: transform;
+            transform: translateZ(0);
         }
 
         .video-bg::after {
@@ -911,7 +916,7 @@
     <nav id="nav">
         <div class="nav-inner">
             <a href="#" class="nav-logo">
-                <img src="assets/pic_7.png" alt="Broadway Family Practice">
+                <img loading="lazy" src="assets/pic_7.png" alt="Broadway Family Practice">
                 <span class="nav-logo-text">Broadway Family Practice</span>
             </a>
 
@@ -949,7 +954,7 @@
                 </div>
             </div>
             <div class="hero-right">
-                <img class="doctor-photo" src="assets/Broadway Family Practice.png" alt="Dr. Morgan Broadway">
+                <img class="doctor-photo" src="assets/Broadway Family Practice.jpg" alt="Dr. Morgan Broadway">
                 <div class="hero-doctor-card">
                     <div class="hero-doctor-name">Morgan Broadway, FNP-C</div>
                     <div class="hero-doctor-accent"></div>
@@ -973,7 +978,7 @@
 
             <!-- Primary Care — tall, col 1, rows 1-2 -->
             <div class="svc-card svc-tall">
-                <div class="svc-img-wrap"><img src="assets/Primary Care.png" alt="Primary Care"></div>
+                <div class="svc-img-wrap"><img loading="lazy" src="assets/Primary Care.jpg" alt="Primary Care"></div>
                 <div class="svc-info">
                     <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
                     <div class="svc-name">Primary Care</div>
@@ -983,7 +988,7 @@
 
             <!-- Hormone Therapy — col 2, row 1 -->
             <div class="svc-card">
-                <div class="svc-img-wrap"><img src="assets/Hormone Replacement.png" alt="Hormone Therapy"></div>
+                <div class="svc-img-wrap"><img loading="lazy" src="assets/Hormone Replacement.jpg" alt="Hormone Therapy"></div>
                 <div class="svc-info">
                     <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="4"/></svg></div>
                     <div class="svc-name">Hormone Therapy</div>
@@ -993,7 +998,7 @@
 
             <!-- Medical Weight Loss — col 3, row 1 -->
             <div class="svc-card">
-                <div class="svc-img-wrap"><img src="assets/Weight Loss.png" alt="Medical Weight Loss"></div>
+                <div class="svc-img-wrap"><img loading="lazy" src="assets/Weight Loss.jpg" alt="Medical Weight Loss"></div>
                 <div class="svc-info">
                     <div class="svc-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
                     <div class="svc-name">Medical Weight Loss</div>
@@ -1003,7 +1008,7 @@
 
             <!-- Aesthetics — col 2, row 2 -->
             <div class="svc-card">
-                <div class="svc-img-wrap"><img src="assets/Botox.png" alt="Aesthetics"></div>
+                <div class="svc-img-wrap"><img loading="lazy" src="assets/Botox.jpg" alt="Aesthetics"></div>
                 <div class="svc-info">
                     <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg></div>
                     <div class="svc-name">Aesthetics</div>
@@ -1013,7 +1018,7 @@
 
             <!-- Telemedicine — col 3, row 2 -->
             <div class="svc-card">
-                <div class="svc-img-wrap"><img src="assets/Telemedicine.png" alt="Telemedicine"></div>
+                <div class="svc-img-wrap"><img loading="lazy" src="assets/Telemedicine.jpg" alt="Telemedicine"></div>
                 <div class="svc-info">
                     <div class="svc-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
                     <div class="svc-name">Telemedicine</div>
@@ -1023,7 +1028,7 @@
 
             <!-- Microneedling — wide, cols 1-2, row 3 -->
             <div class="svc-card svc-wide">
-                <div class="svc-img-wrap"><img src="assets/Microneedling.png" alt="Microneedling"></div>
+                <div class="svc-img-wrap"><img loading="lazy" src="assets/Microneedling.jpg" alt="Microneedling"></div>
                 <div class="svc-info">
                     <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M12 22V12m0 0C12 6 7 2 7 2m5 10c0-6 5-10 5-10"/></svg></div>
                     <div class="svc-name">Microneedling</div>
@@ -1033,7 +1038,7 @@
 
             <!-- Hormone Pellets — col 3, row 3 -->
             <div class="svc-card">
-                <div class="svc-img-wrap"><img src="assets/Hormone Pellets.png" alt="Hormone Pellets"></div>
+                <div class="svc-img-wrap"><img loading="lazy" src="assets/Hormone Pellets.jpg" alt="Hormone Pellets"></div>
                 <div class="svc-info">
                     <div class="svc-icon"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="10" ry="5" transform="rotate(45 12 12)"/></svg></div>
                     <div class="svc-name">Hormone Pellets</div>
@@ -1043,7 +1048,7 @@
 
             <!-- Hair Loss — col 1, row 4 -->
             <div class="svc-card">
-                <div class="svc-img-wrap"><img src="assets/Hair Loss.png" alt="Hair Loss"></div>
+                <div class="svc-img-wrap"><img loading="lazy" src="assets/Hair Loss.jpg" alt="Hair Loss"></div>
                 <div class="svc-info">
                     <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 017 7c0 5-7 13-7 13S5 14 5 9a7 7 0 017-7z"/></svg></div>
                     <div class="svc-name">Hair Loss</div>
@@ -1053,7 +1058,7 @@
 
             <!-- Wrinkle Reduction — wide, cols 2-3, row 4 -->
             <div class="svc-card svc-wide">
-                <div class="svc-img-wrap"><img src="assets/Wrinkle Reduction.png" alt="Wrinkle Reduction"></div>
+                <div class="svc-img-wrap"><img loading="lazy" src="assets/Wrinkle Reduction.jpg" alt="Wrinkle Reduction"></div>
                 <div class="svc-info">
                     <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M5 12h14M5 8h14M5 16h10"/></svg></div>
                     <div class="svc-name">Wrinkle Reduction</div>
@@ -1106,7 +1111,7 @@
     <section class="about-section fade-in" id="about">
         <div class="about-glass">
             <div class="about-img-wrap">
-                <img src="assets/Broadway Family Practice.png" alt="Dr. Morgan Broadway">
+                <img src="assets/Broadway Family Practice.jpg" alt="Dr. Morgan Broadway">
             </div>
             <div class="about-content">
                 <div class="about-content-inner">
@@ -1121,7 +1126,7 @@
                         <span class="cred-tag">Doctorate in Nursing</span>
                         <span class="cred-tag">Littleton Native</span>
                     </div>
-                    <img src="assets/Image.png" alt="Evexipel Provider" class="evexipel-badge">
+                    <img loading="lazy" src="assets/Image.jpg" alt="Evexipel Provider" class="evexipel-badge">
                 </div>
             </div>
         </div>
@@ -1176,13 +1181,13 @@
             <p class="section-desc">Focus on your health — we'll handle the paperwork.</p>
         </div>
         <div class="insurance-logos">
-            <img src="assets/United Healthcare.png" class="insurance-logo" alt="United Healthcare">
-            <img src="assets/Anthem BCBS.png" class="insurance-logo" alt="Anthem BCBS">
-            <img src="assets/Cigna.png" class="insurance-logo" alt="Cigna">
-            <img src="assets/Medicare.png" class="insurance-logo" alt="Medicare">
-            <img src="assets/AARP.png" class="insurance-logo" alt="AARP">
-            <img src="assets/UMR.png" class="insurance-logo" alt="UMR">
-            <img src="assets/Friday Health Plans.png" class="insurance-logo" alt="Friday Health Plans">
+            <img loading="lazy" src="assets/United Healthcare.png" class="insurance-logo" alt="United Healthcare">
+            <img loading="lazy" src="assets/Anthem BCBS.png" class="insurance-logo" alt="Anthem BCBS">
+            <img loading="lazy" src="assets/Cigna.png" class="insurance-logo" alt="Cigna">
+            <img loading="lazy" src="assets/Medicare.png" class="insurance-logo" alt="Medicare">
+            <img loading="lazy" src="assets/AARP.png" class="insurance-logo" alt="AARP">
+            <img loading="lazy" src="assets/UMR.png" class="insurance-logo" alt="UMR">
+            <img loading="lazy" src="assets/Friday Health Plans.png" class="insurance-logo" alt="Friday Health Plans">
         </div>
         </div><!-- end insurance-glass -->
     </section>
@@ -1266,16 +1271,7 @@
     }, { threshold: 0.08, rootMargin: '0px 0px -60px 0px' });
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-    // Smooth scroll anchors
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-        a.addEventListener('click', e => {
-            const href = a.getAttribute('href');
-            if (href === '#') return;
-            e.preventDefault();
-            const target = document.querySelector(href);
-            if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        });
-    });
+    // Smooth scroll — handled natively by html { scroll-behavior: smooth }
 </script>
 </body>
 </html>
